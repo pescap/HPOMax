@@ -10,3 +10,36 @@ This folder allows to reproduce the results in:
   year = {2022},
 }
 ```
+
+# 2D Dirichlet
+
+To run the 2D Dirichlet experiments:
+
+```
+cd Dirichlet;
+```
+and run
+```
+DDEBACKEND='tensorflow' GPU_VISIBLE_DEVICES='1' python dirichlet_gp.py --name ze0_11 --hard_constraint --seed 11
+```
+
+To train the best model, run:
+```
+DDEBACKEND='tensorflow' GPU_VISIBLE_DEVICES='2' python main.py --name best43 --hard_constraint --seed 11 --learning_rate 0.0001 --num_dense_layers 2 --num_dense_nodes 275 --activation 'sin'
+```
+
+
+# 3D Neumann
+
+To run the 3D Neumann experiments:
+
+
+```
+cd Neumann;
+```
+and run
+```
+DDEBACKEND='tensorflow' GPU_VISIBLE_DEVICES='1' python neumann_gp.py --name finaln0_11 --seed 11 --d 3
+```
+
+
