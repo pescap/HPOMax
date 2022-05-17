@@ -16,3 +16,18 @@ This library was used for HPO applied to physics-informed neural networks in:
   year = {2022},
 }
 ```
+
+## How it works? 
+
+First, go to (or copy) the template folder:
+
+```
+cd template
+```
+
+
+- In ``config.yaml``, define all the parameters for your model. It will allow you to run different models with one line of code.
+- Define your model in ``model.py``. The model is with two functions:
+  - create_model: define and compile your model
+  - train_model: train the model and return its accuracy as an output
+- Set the HPO in ``model_gp``.
