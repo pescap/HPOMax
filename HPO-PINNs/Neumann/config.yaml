@@ -1,0 +1,92 @@
+d:
+  default: 2
+  type: int
+
+name:
+  default: temp
+  type: str
+
+seed:
+  default: -1
+  type: int
+  
+problem:
+  default: dirichlet
+  type: str
+
+hard_constraint:
+  default: False
+  type: bool
+
+float_precision:
+  default: float32
+  type: str
+  
+weights:
+  default: 100.
+  type: float
+  
+n:
+  default: 2
+  type: int
+
+precision_train:
+  default: 10
+  type: int
+
+precision_test:
+  default: 30
+  type: int
+
+level:
+  default: 0
+  type: int
+  
+num_dense_layers:
+  default: 3
+  type: int
+
+num_dense_nodes:
+  default: 150
+  type: int
+
+activation:
+  default: sin
+  type: str
+
+epochs:
+  default: 50000
+  #default: 1000
+  type: int
+
+learning_rate:
+  default: 0.001
+  type: float
+
+early:
+  default: False
+  type: bool
+
+monitor:
+  default: loss_train
+  type: str
+
+patience:
+  default: 2000
+  type: int
+
+min_delta:
+  default: 0
+  type: int
+
+lbfgs:
+  default: False
+  type: bool
+
+maxiter:
+  default: 10000
+  type: int
+
+return_model:
+  default: False
+  type: bool

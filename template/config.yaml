@@ -1,0 +1,10 @@
+# Config file for your model.
+# Contains all the parameters for the model, including the regular parameters and HPs.
+
+variable1:
+  default: 2
+  type: int
+
+variable2:
+  default: False
+  type: bool
